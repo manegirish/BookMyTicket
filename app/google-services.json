@@ -1,0 +1,58 @@
+{
+  "project_info": {
+    "project_number": "898549032302",
+    "firebase_url": "https://book-my-ticket.firebaseio.com",
+    "project_id": "book-my-ticket",
+    "storage_bucket": "book-my-ticket.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898549032302:android:840644bd14cea312",
+        "android_client_info": {
+          "package_name": "com.example.adams.bookmyticket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "898549032302-2cp3s0s9vtcp8gsa2d3gdgn53en9j8g3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.adams.bookmyticket",
+            "certificate_hash": "1620e0649964c19ea49cee7474d1c46a20eed7f3"
+          }
+        },
+        {
+          "client_id": "898549032302-l58mqbglb8rsc97oe34hskuq2g71obfi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDk4naD2luysFaZkgzeXAsejNVSE0O255g"
+        },
+        {
+          "current_key": "AIzaSyDJFtxmFRQd-QwuJlPz63OC9yffOYLj7Yo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "898549032302-l58mqbglb8rsc97oe34hskuq2g71obfi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
