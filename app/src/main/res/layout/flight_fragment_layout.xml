@@ -18,36 +18,36 @@
         android:orientation="vertical">
 
         <EditText
+            android:id="@+id/etsourceflight"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:id="@+id/etsourceflight"
-            android:hint="Enter your Source Here"
-            android:textColor="#FFFFFF"
-            android:textSize="14sp"
-            android:textColorHint="#FFFFFF"
             android:background="@drawable/primary_light_rounded_rectangle"
-            android:textAlignment="center"/>
+            android:hint="Enter your Source Here"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="14sp" />
 
         <EditText
+            android:id="@+id/etdestinationflight"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:id="@+id/etdestinationflight"
-            android:hint="Enter your Destination Here"
-            android:textColorHint="#FFFFFF"
             android:layout_marginTop="16dp"
-            android:textSize="14sp"
-            android:textColor="#FFFFFF"
             android:background="@drawable/primary_light_rounded_rectangle"
-            android:textAlignment="center"/>
+            android:hint="Enter your Destination Here"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvclassflight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
-            android:textAllCaps="true"
             android:layout_marginTop="20dp"
             android:text="Choose your Class"
+            android:textAllCaps="true"
             android:textColor="#FFFFFF"
             android:textSize="16dp" />
 
@@ -55,8 +55,8 @@
             android:id="@+id/radioGroup"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="7dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingTop="7dp">
 
             <RadioButton
                 android:id="@+id/rbflight"
@@ -64,64 +64,56 @@
                 android:layout_height="wrap_content"
                 android:text="First Class"
                 android:textColor="#FFFFFF"
-                android:textSize="14sp"/>
+                android:textSize="14sp" />
 
             <RadioButton
                 android:id="@+id/rbflight2"
-                android:textColor="#FFFFFF"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="Economy Class"
-                android:textSize="14sp"/>
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
 
             <RadioButton
                 android:id="@+id/rbflight3"
                 android:layout_width="fill_parent"
-                android:textColor="#FFFFFF"
                 android:layout_height="wrap_content"
                 android:text="Business Class"
-                android:textSize="14sp"/>
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
             <RadioButton
                 android:id="@+id/rbflight4"
                 android:layout_width="fill_parent"
-                android:textColor="#FFFFFF"
                 android:layout_height="wrap_content"
                 android:text="Premiun Economy"
-                android:textSize="14sp"/>
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
         </RadioGroup>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Enter the Date"
-            android:textColor="#FFFFFF"
-            android:textAllCaps="true"
-            android:textSize="16dp"
-            android:layout_gravity="start"
             android:id="@+id/tvdateflight"
-            android:layout_marginTop="20dp"/>
-        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Date"
-            android:id="@+id/tvdate"
-            android:textColor="#FFFFFF"
-            android:textSize="15dp"
             android:layout_gravity="start"
-            android:paddingLeft="16dp"
-            android:layout_marginTop="10dp"/>
-        <EditText
+            android:layout_marginTop="20dp"
+            android:text="Enter the Date"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/etdate"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:hint="DD/MM/YYYY"
-            android:textColorHint="#FFFFFF"
-            android:inputType="date"
-            android:textColor="#FFFFFF"
-            android:textSize="14sp"
-            android:id="@+id/etdate"
             android:layout_marginTop="10dp"
             android:background="@drawable/primary_light_rounded_rectangle"
-            android:textAlignment="center"/>
+            android:gravity="center"
+            android:hint="DD/MM/YYYY"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="14sp" />
 
 
         <Button
