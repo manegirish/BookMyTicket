@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
         public Fragment getItem(int position) {
             switch (position) {
                 case 0:
-                    Flight tab1 = new Flight();
+                    FlightFragment tab1 = new FlightFragment();
                     return tab1;
                 case 1:
                     RailwayFragment tab2 = new RailwayFragment();

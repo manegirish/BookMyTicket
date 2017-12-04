@@ -31,7 +31,7 @@ public class Railway extends Fragment {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 RadioButton rb = (RadioButton) group.findViewById(checkedId);
                 if (null != rb && checkedId > -1) {
-                    /*Toast.makeText(Flight.this, rb.getText(), Toast.LENGTH_SHORT).show();*/
+                    /*Toast.makeText(FlightFragment.this, rb.getText(), Toast.LENGTH_SHORT).show();*/
                 }
 
             }
