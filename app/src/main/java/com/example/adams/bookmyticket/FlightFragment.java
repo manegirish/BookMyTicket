@@ -49,11 +49,11 @@ public class FlightFragment extends Fragment implements View.OnClickListener {
     }
 
     private boolean isValid(String source, String destination, int radioButtonId) {
-        if (sourceBox.getText().length() == 0) {
+        if (source.length() == 0) {
             sourceBox.setError("Please Enter the Source");
             return false;
         }
-        if (destinationBox.getText().length() == 0) {
+        if (destination.length() == 0) {
             destinationBox.setError("Please Enter the Destination");
             return false;
         }

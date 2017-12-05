@@ -43,11 +43,31 @@ public class RailwayFragment extends Fragment implements View.OnClickListener {
 
     }
 
+    private boolean isValid(String source, String destination) {
+        if (source.length() == 0) {
+            sourceBox.setError("Please Enter the Source");
+            return false;
+        }
+        if (destination.length() == 0) {
+            destinationBox.setError("Please Enter the Destination");
+            return false;
+        }
+        if (classRadioGroup.getCheckedRadioButtonId() <= 0) {
+            Toast.makeText(getActivity(), "Please Select Class", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (typeRadioGroup.getCheckedRadioButtonId() <= 0) {
+            Toast.makeText(getActivity(), "Please Select Ticket Type", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+
+        return true;
+    }
+
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.buttonnextrailway:
-
                 String source = sourceBox.getText().toString().trim();
                 String destination = destinationBox.getText().toString().trim();
 
@@ -60,13 +80,10 @@ public class RailwayFragment extends Fragment implements View.OnClickListener {
                 if (typeRadioGroup.getCheckedRadioButtonId() == R.id.rbrailway3) {
                     isSingleType = true;
                 }
-                if (sourceBox.getText().length() == 0)
-                {
-                    sourceBox.setError("Please Enter the Source");
-                }
-                if (destinationBox.getText().length() == 0)
-                {
-                    destinationBox.setError("Please Enter the Destination");
+                if (isValid(source,destination)){
+                    //Write your intent or whatever code you want to make for  going to another activity
+                    Intent in = new Intent(getActivity(), PaymentActivity.class);
+                    startActivity(in);
                 }
                 break;
         }
