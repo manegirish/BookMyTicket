@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -72,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -103,7 +103,15 @@ public class MainActivity extends AppCompatActivity {
 
     //Deleted placeholderfragment from here
 
-
+    /**
+     * Hides the soft keyboard
+     */
+    public void hideSoftKeyboard() {
+        if(getCurrentFocus()!=null) {
+            InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+            inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+        }
+    }
 
     /**
      * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
@@ -117,6 +125,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
+            //hideSoftKeyboard();
             switch (position) {
                 case 0:
                     FlightFragment tab1 = new FlightFragment();
@@ -125,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
                     RailwayFragment tab2 = new RailwayFragment();
                     return tab2;
                 case 2:
-                    Taxi tab3 = new Taxi();
+                    TaxiFragment tab3 = new TaxiFragment();
                     return tab3;
             default:
             return null;

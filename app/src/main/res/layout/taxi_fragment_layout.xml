@@ -2,10 +2,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:background="@color/colorPrimary"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.adams.bookmyticket.MainActivity">
 
@@ -18,44 +18,45 @@
         android:orientation="vertical">
 
         <EditText
+            android:id="@+id/etsourcetaxi"
             android:layout_width="match_parent"
             android:layout_height="40dp"
+            android:background="@drawable/primary_light_rounded_rectangle"
             android:hint="Enter your Source Here"
-            android:id="@+id/etsourcetaxi"
+            android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textColorHint="#FFFFFF"
-            android:textSize="14sp"
-            android:background="@drawable/primary_light_rounded_rectangle"
-            android:textAlignment="center"/>
+            android:textSize="14sp" />
 
         <EditText
+            android:id="@+id/etdestinationtaxi"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:hint="Enter your Destination Here"
-            android:id="@+id/etdestinationtaxi"
-            android:textColorHint="#FFFFFF"
-            android:textColor="#FFFFFF"
-            android:textSize="14sp"
             android:layout_marginTop="16dp"
             android:background="@drawable/primary_light_rounded_rectangle"
-            android:textAlignment="center"/>
+            android:hint="Enter your Destination Here"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="14sp" />
 
         <TextView
+            android:id="@+id/tvcartypetaxi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="30dp"
             android:text="Choose the Car Type"
-            android:textColor="#FFFFFF"
-            android:id="@+id/tvcartypetaxi"
-            android:textSize="16dp"
             android:textAllCaps="true"
-            android:layout_gravity="left"
-            android:layout_marginTop="30dp"/>
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
         <RadioGroup
             android:id="@+id/radioGroup"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="7dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingTop="7dp">
 
             <RadioButton
                 android:id="@+id/rbtaxi"
@@ -63,65 +64,56 @@
                 android:layout_height="wrap_content"
                 android:text="Micro"
                 android:textColor="#FFFFFF"
-                android:textSize="14sp"/>
+                android:textSize="14sp" />
 
             <RadioButton
                 android:id="@+id/rbtaxi2"
-                android:textColor="#FFFFFF"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="Mini"
-                android:textSize="14sp"/>
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
 
             <RadioButton
                 android:id="@+id/rbtaxi3"
                 android:layout_width="fill_parent"
-                android:textColor="#FFFFFF"
                 android:layout_height="wrap_content"
                 android:text="Prime"
-                android:textSize="14sp"/>
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
             <RadioButton
                 android:id="@+id/rbtaxi4"
                 android:layout_width="fill_parent"
-                android:textColor="#FFFFFF"
                 android:layout_height="wrap_content"
                 android:text="Luxury"
-                android:textSize="14sp"/>
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
         </RadioGroup>
 
         <TextView
             android:id="@+id/tvtimetaxi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="left"
+            android:layout_gravity="start"
             android:layout_marginTop="30dp"
             android:text="PickUp Time"
             android:textAllCaps="true"
             android:textColor="#FFFFFF"
-            android:textSize="16dp" />
+            android:textSize="16sp" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Time"
-            android:id="@+id/tvtime"
-            android:textColor="#FFFFFF"
-            android:textSize="15dp"
-            android:layout_gravity="left"
-            android:paddingLeft="16dp"
-            android:layout_marginTop="20dp"/>
-        <EditText
+            android:id="@+id/ettimetaxi"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:hint="HH/MM"
-            android:id="@+id/ettimetaxi"
-            android:textColorHint="#FFFFFF"
-            android:inputType="time"
-            android:textSize="14sp"
-            android:textColor="#FFFFFF"
             android:layout_marginTop="10dp"
             android:background="@drawable/primary_light_rounded_rectangle"
-            android:textAlignment="center"/>
+            android:gravity="center"
+            android:hint="HH:MM"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/buttonnexttaxi"
@@ -138,7 +130,6 @@
             android:textAllCaps="true"
             android:textSize="16sp"
             android:textStyle="bold" />
-
 
     </LinearLayout>
 </ScrollView>
